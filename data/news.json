@@ -1,0 +1,25 @@
+{
+  "articles": [
+    {
+      "id": "seedprofile01",
+      "slug": "what-the-company-was-formed-to-do",
+      "category": "announcements",
+      "published": true,
+      "author": "Envision Strategies",
+      "image": "/images/dar-skyline-2.jpg",
+      "createdAt": "2026-11-13",
+      "en": {
+        "title": "What Envision Strategies Company Limited was formed to do",
+        "excerpt": "The Memorandum sets a public-private partnership purpose: large-scale projects, government revenue collections, youth employment and inclusive economic growth.",
+        "caption": "Dar es Salaam. Illustrative photograph by Alidamji, CC BY-SA 4.0. Not a company project.",
+        "body": "Envision Strategies Company Limited is a private company limited by shares, with its registered office in Tanzania Mainland. It is formed under the Companies Act No. 12 of 2002.\n\nThe principal object in the Memorandum is to collaborate with the Government of the United Republic of Tanzania under PPP frameworks, and to carry out large-scale business projects. The stated intent is to increase government revenue collections, combat youth unemployment and deliver inclusive economic growth, for the company and for the public.\n\nThe same document allows the company to enter arrangements with government, authorities, cities and municipalities, and to work with local and international partners. An object is a permission to pursue the work. It is not evidence that a particular contract has been signed.\n\nThe Articles make the company private. It does not offer its shares to the public. Management comprises the Director General, the Director of Operations, the Director of Finance and Administration, and the Secretary. The Board includes the Director General as founder and permanent member, with four further members appointed by the shareholders. The people holding those offices are not named in the Articles, so they are not named on this website.\n\nWhere this site describes revenue support or environmental sanitation, it describes the operating areas the company presents. Payment of tax, and the powers of a revenue authority or a municipal council, stay with those institutions."
+      },
+      "sw": {
+        "title": "Envision Strategies Company Limited ilianzishwa kufanya nini",
+        "excerpt": "Katiba ya Kampuni inaweka madhumuni ya ushirikiano wa umma na binafsi: miradi mikubwa, makusanyo ya mapato ya serikali, ajira kwa vijana na ukuaji jumuishi wa uchumi.",
+        "caption": "Dar es Salaam. Picha ya mfano ya Alidamji, CC BY-SA 4.0. Si mradi wa kampuni.",
+        "body": "Envision Strategies Company Limited ni kampuni binafsi yenye dhima kulingana na hisa, na ofisi yake iliyosajiliwa iko Tanzania Bara. Imeanzishwa chini ya Sheria ya Makampuni Na. 12 ya 2002.\n\nLengo kuu katika Katiba ya Kampuni ni kushirikiana na Serikali ya Jamhuri ya Muungano wa Tanzania chini ya mifumo ya PPP, na kutekeleza miradi mikubwa ya kibiashara. Nia iliyotajwa ni kuongeza makusanyo ya mapato ya serikali, kupambana na ukosefu wa ajira kwa vijana na kuleta ukuaji jumuishi wa uchumi, kwa kampuni na kwa umma.\n\nHati hiyo hiyo inairuhusu kampuni kuingia mipango na serikali, mamlaka, miji na manispaa, na kufanya kazi na washirika wa ndani na wa kimataifa. Lengo ni ruhusa ya kufuata kazi. Si ushahidi kuwa mkataba fulani umesainiwa.\n\nKanuni zinaifanya kampuni kuwa ya binafsi. Haitozi hisa zake kwa umma. Usimamizi una Mkurugenzi Mkuu, Mkurugenzi wa Uendeshaji, Mkurugenzi wa Fedha na Utawala, na Katibu. Bodi inajumuisha Mkurugenzi Mkuu kama mwanzilishi na mwanachama wa kudumu, pamoja na wajumbe wengine wanne wanaoteuliwa na wenye hisa. Watu walioshika ofisi hizo hawatajwi katika Kanuni, kwa hiyo hawatajwi katika tovuti hii.\n\nPale tovuti hii inapoeleza msaada wa mapato au usafi wa mazingira, inaeleza maeneo ya uendeshaji ambayo kampuni inayaeleza. Malipo ya kodi, na mamlaka ya taasisi ya mapato au halmashauri, yanabaki kwa taasisi hizo."
+      }
+    }
+  ]
+}
