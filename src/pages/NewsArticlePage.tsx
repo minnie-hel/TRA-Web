@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { Seo } from "../components/Seo";
 import { useI18n } from "../i18n/LanguageContext";
 import { usePublishedNews } from "../lib/news";
+import { resolvePublicAssetUrl } from "../lib/publicUrl";
 import { NotFoundPage } from "./NotFoundPage";
 
 export function NewsArticlePage() {
@@ -29,7 +30,11 @@ export function NewsArticlePage() {
             {t.news.by} {article.author}
           </p>
         </div>
-        <img src={article.image} alt={article.imageAlt} className="mx-auto max-h-[32rem] w-full max-w-5xl object-cover px-5 md:px-8" />
+        <img
+          src={resolvePublicAssetUrl(article.image)}
+          alt={article.imageAlt}
+          className="mx-auto max-h-[32rem] w-full max-w-5xl object-cover px-5 md:px-8"
+        />
         {article.caption && <p className="mx-auto max-w-3xl px-5 pt-3 text-xs text-muted md:px-8">{article.caption}</p>}
         <div className="mx-auto max-w-3xl space-y-5 px-5 py-10 text-lg leading-relaxed md:px-8">
           {article.body.map((paragraph) => (

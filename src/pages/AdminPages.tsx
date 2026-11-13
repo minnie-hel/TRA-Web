@@ -3,6 +3,7 @@ import { Link, Navigate, useNavigate, useParams } from "react-router-dom";
 import { Seo } from "../components/Seo";
 import { useI18n } from "../i18n/LanguageContext";
 import { adminRequest, readToken, writeToken, type StoredArticle } from "../lib/news";
+import { resolvePublicAssetUrl } from "../lib/publicUrl";
 
 function fileToDataUrl(file: File) {
   return new Promise<string>((resolve, reject) => {
@@ -278,7 +279,9 @@ export function AdminEditPage() {
               />
             </label>
             <p className="text-xs text-muted">{a.imageHelp}</p>
-            {form.image && <img src={form.image} alt="" className="h-36 w-full max-w-sm object-cover" />}
+            {form.image && (
+              <img src={resolvePublicAssetUrl(form.image)} alt="" className="h-36 w-full max-w-sm object-cover" />
+            )}
             <label className="flex items-center gap-3 text-sm text-navy">
               <input type="checkbox" checked={form.published} onChange={(event) => setForm({ ...form, published: event.target.checked })} />
               {a.publish}

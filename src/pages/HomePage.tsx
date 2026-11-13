@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { publicUrl } from "../lib/publicUrl";
+import { publicUrl, resolvePublicAssetUrl } from "../lib/publicUrl";
 import { ButtonLink } from "../components/ButtonLink";
 import { Reveal } from "../components/Reveal";
 import { Seo } from "../components/Seo";
@@ -205,7 +205,11 @@ export function HomePage() {
           </ButtonLink>
         </div>
         <article className="card card-news mt-8 grid md:grid-cols-5">
-          <img src={article.image} alt="" className="h-64 w-full object-cover md:col-span-2 md:h-full" />
+          <img
+            src={resolvePublicAssetUrl(article.image)}
+            alt={article.imageAlt ?? ""}
+            className="h-64 w-full object-cover md:col-span-2 md:h-full"
+          />
           <div className="p-6 md:col-span-3 md:p-8">
             <p className="text-xs tracking-[0.14em] text-muted uppercase">{article.dateline}</p>
             <h3 className="mt-3 font-display text-3xl leading-tight text-navy">{article.title}</h3>

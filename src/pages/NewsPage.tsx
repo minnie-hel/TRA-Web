@@ -5,6 +5,7 @@ import { Reveal } from "../components/Reveal";
 import { Seo } from "../components/Seo";
 import { useI18n } from "../i18n/LanguageContext";
 import { usePublishedNews } from "../lib/news";
+import { resolvePublicAssetUrl } from "../lib/publicUrl";
 
 export function NewsPage() {
   const { t, lang } = useI18n();
@@ -39,7 +40,11 @@ export function NewsPage() {
           <div className="mt-10 grid gap-6">
             {visible.map((article, index) => (
               <Reveal key={article.slug} as="article" delay={index * 100} className="card card-news grid md:grid-cols-5">
-                <img src={article.image} alt="" className="h-56 w-full object-cover md:col-span-2 md:h-full" />
+                <img
+                  src={resolvePublicAssetUrl(article.image)}
+                  alt={article.imageAlt}
+                  className="h-56 w-full object-cover md:col-span-2 md:h-full"
+                />
                 <div className="p-6 md:col-span-3">
                   <p className="text-xs tracking-[0.14em] text-muted uppercase">{article.dateline}</p>
                   <h2 className="mt-3 font-display text-3xl leading-tight text-navy">{article.title}</h2>

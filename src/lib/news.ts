@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { Lang } from "../i18n/LanguageContext";
+import { resolvePublicAssetUrl } from "./publicUrl";
 
 export type StoredArticle = {
   id: string;
@@ -53,7 +54,7 @@ export function localize(article: StoredArticle, lang: Lang): PublicArticle {
     slug: article.slug,
     category: article.category,
     author: article.author,
-    image: article.image,
+    image: resolvePublicAssetUrl(article.image),
     imageAlt: preferred.caption || preferred.title,
     dateline,
     title: preferred.title,
